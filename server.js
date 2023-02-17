@@ -22,7 +22,9 @@ app.post('/suma', (req, res) => {
     });
 });
 
-
+app.get('/info_carnet', ( req, res) => {
+    res.send("Victor Cuches - 201807307")
+})
 
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
