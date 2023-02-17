@@ -15,13 +15,14 @@ app.get('/', (req, res) => {
 app.post('/suma', (req, res) => {
     const numUno = req.body.numUno;
     const numDos = req.body.numDos;
-    const resultado = numUno + numDos 
+    const resultado = numUno * numDos 
     res.json({
         result: true,
-        message: `Operacion: ${numUno} + ${numDos} = ${resultado}`
+        message: `Operacion: ${numUno} * ${numDos} = ${resultado}`
     });
 });
 
+// endpoint correspondiente a rama feature/info-201807307
 app.get('/info_carnet', ( req, res) => {
     res.send("Victor Cuches - 201807307")
 })
